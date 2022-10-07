@@ -35,9 +35,9 @@
             <span><?php echo $n2; ?></span>
         </div>
         <div class="resultado">
-            <form action="/resultado.php?n1=<?=$n1?>&n2=<?=$n2?>&<?=$op?>"> <!-- para onde o formuário será enviado -->
+            <form method="POST" action="/resultado.php?n1=<?=$n1?>&n2=<?=$n2?>&operacao=<?=$_GET['operacao']?>"> <!-- com POST não aparece a entrada na url, para onde o formuário será enviado -->
                 <legend>Resposta</legend>
-                <input class="form" type="number">
+                <input class="form" type="number" name="resposta"> <!--todo form tem um elemento "name"-->
                 <button class="btn" type="submit">Submeter</button>
             </form>
         </div>
