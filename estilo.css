@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    height: 100%;
+    background-image: linear-gradient(rgb(196, 220, 255), rgb(117, 194, 245));
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    margin-top: 50px;
+    text-align: center;
+}
+
+@keyframes logo {
+    0% {
+        transform: rotate(-15deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: rotate(-15deg);
+    }
+}
+
+.logo > img {
+    width: 200px;
+    animation-name: logo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#titulo {
+    text-align: center;
+    padding: 50px;
+    color: darkblue;
+    font-size: 3em;
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu > ul > li {
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: darkblue;
+    color: white;
+    border-radius: 10px;
+}
+
+.partida {
+    text-align: center;
+}
+
+input.form, button.btn {
+    padding: 10px;
+    font-size: 2em;
+    text-align: center;
+    width: 2em;
+    border: none;
+}
+
+.numeros {
+    padding: 50px;
+}
+
+.numeros > span {
+    font-size: 5em;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+    text-shadow: black 3px 3px 0px;
+}
+
+button.btn {
+    cursor: pointer;
+    width: auto;
+    background-color: darkblue;
+    color: white;
+}
+
+.resultado {
+    text-align: center;
+}
+
+.resultado > h1 {
+    margin-bottom: 50px;
+}
+
+.resultado > img {
+    width: 250px;
+}
