@@ -8,9 +8,26 @@
     <title>Resultado do seu IMC</title>
 </head>
 <body>
+
     <div class="container">
         <h3>O resultado do seu IMC é:</h3>
-        <h1>{{ $imc }}</h1>
+        <h3>{{ $imc }}</h3>
+        <hr>
+        <h1>Sua classificação é: 
+            @if ($imc < 18.5)
+                Abaixo do peso
+            @elseif ($imc < 25)
+                Peso normal
+            @elseif ($imc < 30)
+                Sobrepeso
+            @elseif ($imc < 35)
+                Obesidade grau I
+            @elseif ($imc < 40)
+                Obesidade grau II
+            @else
+                Obesidade mórbida
+            @endif
+        </h1>
         <a href="/">Voltar </a>
     </div>
 
