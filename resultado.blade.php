@@ -15,17 +15,17 @@
         <hr>
         <h1>Sua classificação é: 
             @if ($imc < 18.5)
-                Abaixo do peso
+                <span class="text-warning">Abaixo do peso</span>
             @elseif ($imc < 25)
-                Peso normal
+                <span class="text-warning">Peso normal</span>
             @elseif ($imc < 30)
-                Sobrepeso
+                <span class="text-warning">Sobrepeso</span>
             @elseif ($imc < 35)
-                Obesidade grau I
+                <span class="text-warning">Obesidade grau I</span>
             @elseif ($imc < 40)
-                Obesidade grau II
+                <span class="text-warning">Obesidade grau II</span>
             @else
-                Obesidade mórbida
+            <span class="text-warning">Obesidade mórbida</span>
             @endif
         </h1>
         <a href="/">Voltar </a>
